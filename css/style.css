@@ -18,6 +18,12 @@
     font-display: swap;
 }
 
+:root {
+    --color_fondo_primario : #053617;
+    --color_texto_primario : #aaa;
+}
+
+
 
 * {
     margin: 0;
@@ -41,5 +47,41 @@ h1 {
 
 header img {
     width: 100%;
+    display: block;
 }
 
+.fondo_oscuro {
+    background-color: var(--color_fondo_primario);
+    color: var(--color_texto_primario)
+}
+
+.columna_central {
+    max-width: 1000px;
+        margin: 0 auto;
+}
+
+nav {
+    /* display: flex; */
+    /* justify-content: center; */
+    /* align-items: center; */
+    align-content: center;
+    height: 80px;
+
+    ul {
+        
+        display: flex;
+        justify-content: space-between;
+
+    }
+
+    li {
+        list-style: none;
+        padding: .5rem 1rem;
+    }
+
+    a {
+        color : inherit;
+        text-decoration: none;
+        font-size: 1.5rem;
+    }
+}
